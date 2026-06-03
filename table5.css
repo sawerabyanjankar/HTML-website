@@ -1,0 +1,33 @@
+table,th,td{
+    border:2px solid rgb(157, 158, 158);
+    border-collapse: collapse;
+    width: 100%;
+    padding: 10px;
+}
+
+div.tablecontainer {
+    overflow-x: auto;
+}
+
+td{
+    height: 20px;
+    vertical-align:center;
+}
+
+td:hover{
+    background-color: rgb(193, 231, 231);
+}
+
+tr:nth-child(odd){
+    background-color: rgb(243, 235, 191);
+}
+
+th{
+    background-color: rgb(247, 129, 33);
+    color: white;
+}
+
+
+caption{
+    caption-side: top;
+}

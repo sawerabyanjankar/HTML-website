@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For You 💖</title>
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:black;
+    font-family:Arial;
+    overflow:hidden;
+}
+
+/* glowing heart */
+.heart {
+    position:relative;
+    width:120px;
+    height:120px;
+    background:hotpink;
+    transform:rotate(-45deg);
+    box-shadow:0 0 40px hotpink;
+    animation:beat 1s infinite;
+    cursor:pointer;
+}
+
+.heart::before,
+.heart::after {
+    content:"";
+    position:absolute;
+    width:120px;
+    height:120px;
+    background:hotpink;
+    border-radius:50%;
+}
+
+.heart::before { top:-60px; left:0; }
+.heart::after { left:60px; top:0; }
+
+@keyframes beat {
+    0%,100% { transform:rotate(-45deg) scale(1); }
+    50% { transform:rotate(-45deg) scale(1.2); }
+}
+
+/* hidden message */
+.message {
+    position:absolute;
+    color:white;
+    font-size:24px;
+    text-align:center;
+    opacity:0;
+    transition:1s;
+    text-shadow:0 0 10px cyan;
+}
+
+.show {
+    opacity:1;
+}
+
+/* background spark */
+body::before{
+    content:"";
+    position:absolute;
+    width:200%;
+    height:200%;
+    background:radial-gradient(white 1px, transparent 1px);
+    background-size:50px 50px;
+    animation:move 20s linear infinite;
+    opacity:0.1;
+}
+
+@keyframes move{
+    from{transform:translate(0,0);}
+    to{transform:translate(-100px,-100px);}
+}
+</style>
+</head>
+<body>
+
+<div class="heart" onclick="showLove()"></div>
+
+<div class="message" id="msg">
+    You just clicked my heart ❤️<br>
+    Maybe… it belongs to you now ✨
+</div>
+
+<script>
+function showLove(){
+    document.querySelector(".heart").style.opacity = "0";
+    document.getElementById("msg").classList.add("show");
+}
+</script>
+
+</body>
+</html>

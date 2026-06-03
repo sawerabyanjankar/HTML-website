@@ -1,0 +1,45 @@
+.static-box{
+    position:static;
+    background:rgba(171, 35, 250, 0.37);
+}
+
+
+.relative-box{
+    position:relative;
+    top:15px;
+    left:25px;
+    background:rgb(248, 40, 74);
+}
+
+
+.absolute-parent{
+    position:relative;
+    height:200px;
+    background:#ddd;
+    margin:20px;
+    border-radius:10px;
+}
+
+.absolute-box{
+    position:absolute;
+    bottom:1px;
+    right:20px;
+    background:rgb(103, 136, 245);
+}
+
+.sticky-box{
+    position: sticky;
+    top: 0;
+    background: rgb(253, 56, 56);
+    height: 20px;
+    margin::2px;
+}
+
+.fixed-box{
+    position: fixed;
+    background: rgb(4, 180, 33);
+    height: 20px;
+    bottom: 20px;
+    right: 20px;
+   
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Special For Sawera 💖</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+    background:linear-gradient(135deg,#050816,#170b34,#2b0d52);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+.container{
+    text-align:center;
+    width:90%;
+    max-width:900px;
+    position:relative;
+}
+
+.page{
+    display:none;
+    animation:fade 1s;
+}
+
+.active{
+    display:block;
+}
+
+h1{
+    font-size:75px;
+    color:#ff4da6;
+
+    text-shadow:
+    0 0 10px #ff4da6,
+    0 0 20px #ff4da6,
+    0 0 40px #ff1493,
+    0 0 80px #ff1493;
+}
+
+p{
+    margin-top:20px;
+    font-size:28px;
+    line-height:1.8;
+    color:#f5dfff;
+}
+
+button{
+    margin-top:40px;
+    padding:18px 40px;
+    font-size:22px;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    background:linear-gradient(45deg,#ff4da6,#ff1493);
+    color:white;
+    box-shadow:0 0 20px #ff1493;
+    transition:0.4s;
+}
+
+button:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 40px #ff1493;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Floating Hearts */
+
+.heart{
+    position:absolute;
+    color:#ff4da6;
+    font-size:25px;
+    animation:float 8s linear infinite;
+    opacity:0.7;
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(110vh) scale(0);
+    }
+
+    100%{
+        transform:translateY(-120vh) scale(1.8);
+    }
+
+}
+
+/* Stars */
+
+.star{
+    position:absolute;
+    width:4px;
+    height:4px;
+    background:white;
+    border-radius:50%;
+    animation:twinkle 3s infinite;
+}
+
+@keyframes twinkle{
+    0%{
+        opacity:0.2;
+    }
+
+    50%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:0.2;
+    }
+}
+
+.final{
+    font-size:90px;
+    animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+
+    from{
+        text-shadow:
+        0 0 10px #ff4da6,
+        0 0 30px #ff1493;
+    }
+
+    to{
+        text-shadow:
+        0 0 20px #ff99cc,
+        0 0 50px #ff1493,
+        0 0 100px #ff1493;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Floating Hearts -->
+<div class="heart" style="left:5%; animation-duration:6s;">❤</div>
+<div class="heart" style="left:15%; animation-duration:8s;">❤</div>
+<div class="heart" style="left:25%; animation-duration:7s;">❤</div>
+<div class="heart" style="left:40%; animation-duration:9s;">❤</div>
+<div class="heart" style="left:55%; animation-duration:6s;">❤</div>
+<div class="heart" style="left:70%; animation-duration:8s;">❤</div>
+<div class="heart" style="left:85%; animation-duration:7s;">❤</div>
+
+<!-- Stars -->
+<div class="star" style="top:10%; left:20%;"></div>
+<div class="star" style="top:25%; left:70%;"></div>
+<div class="star" style="top:60%; left:15%;"></div>
+<div class="star" style="top:80%; left:85%;"></div>
+<div class="star" style="top:40%; left:50%;"></div>
+
+<div class="container">
+
+<!-- PAGE 1 -->
+<div class="page active">
+    <h1>SAWERA ✨</h1>
+
+    <p>
+        Out of all the people in this world,<br>
+        somehow your name feels different 💖
+    </p>
+
+    <button onclick="nextPage()">Continue 💌</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page">
+    <h1>You Know What?</h1>
+
+    <p>
+        Some people become memories.<br>
+        But some people become feelings ✨
+    </p>
+
+    <button onclick="nextPage()">Next 🌸</button>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page">
+    <h1>Every Moment ✨</h1>
+
+    <p>
+        Every second with you feels like<br>
+        stars dancing inside my universe 🌙
+    </p>
+
+    <button onclick="nextPage()">One More 💕</button>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page">
+    <h1>Little Secret 🤍</h1>
+
+    <p>
+        Your smile could probably make<br>
+        even the darkest nights beautiful ✨
+    </p>
+
+    <button onclick="nextPage()">Keep Going 💖</button>
+</div>
+
+<!-- PAGE 5 -->
+<div class="page">
+    <h1>Dear Sawera 💌</h1>
+
+    <p>
+        Maybe this is just code...<br>
+        but the feelings behind it are real 🌸
+    </p>
+
+    <button onclick="nextPage()">Final Message ✨</button>
+</div>
+
+<!-- PAGE 6 -->
+<div class="page">
+    <h1 class="final">I LIKE YOU 💖</h1>
+
+    <p>
+        And if destiny is kind enough...<br>
+        maybe this story becomes ours forever ✨
+    </p>
+
+    <button onclick="restart()">Replay 🌙</button>
+</div>
+
+</div>
+
+<script>
+
+let currentPage = 0;
+
+const pages = document.querySelectorAll(".page");
+
+function nextPage(){
+
+    pages[currentPage].classList.remove("active");
+
+    currentPage++;
+
+    pages[currentPage].classList.add("active");
+
+}
+
+function restart(){
+
+    pages[currentPage].classList.remove("active");
+
+    currentPage = 0;
+
+    pages[currentPage].classList.add("active");
+
+}
+
+</script>
+
+</body>
+</html>
+
+

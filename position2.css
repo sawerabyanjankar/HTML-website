@@ -1,0 +1,22 @@
+.container {
+    position: relative;
+}
+.topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 20px;
+}
+
+img { position: absolute;
+left: 0px;
+top: 0px;
+z-index: -1;}
+
+div{
+    background-color: coral;
+    width: 200px;
+    height: 65px;
+    border: 1px solid;
+    overflow: visible;
+}

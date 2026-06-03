@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bishesh Experience</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:black;
+    overflow:hidden;
+    color:white;
+    height:100vh;
+}
+
+/* Pages */
+
+.page{
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    transition:1s;
+    padding:20px;
+    text-align:center;
+}
+
+.hidden{
+    opacity:0;
+    pointer-events:none;
+    transform:scale(1.2);
+}
+
+h1{
+    font-size:4rem;
+    margin-bottom:15px;
+    animation:glow 2s infinite alternate;
+}
+
+p{
+    font-size:1.2rem;
+    color:#cfcfcf;
+    max-width:700px;
+}
+
+button{
+    margin-top:30px;
+    padding:14px 35px;
+    border:none;
+    border-radius:40px;
+    background:#00ffff;
+    color:black;
+    font-size:1rem;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 20px #00ffff;
+}
+
+/* Glow */
+
+@keyframes glow{
+    from{
+        text-shadow:
+        0 0 10px white,
+        0 0 20px cyan,
+        0 0 40px cyan;
+    }
+
+    to{
+        text-shadow:
+        0 0 20px white,
+        0 0 40px cyan,
+        0 0 80px cyan;
+    }
+}
+
+/* Floating particles */
+
+.circle{
+    position:absolute;
+    border-radius:50%;
+    background:rgba(255,255,255,0.08);
+    animation:float linear infinite;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(100vh) scale(0);
+    }
+
+    to{
+        transform:translateY(-120vh) scale(1);
+    }
+}
+
+/* Meme card */
+
+.card{
+    margin-top:20px;
+    padding:20px;
+    border:2px solid cyan;
+    border-radius:20px;
+    width:300px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(5px);
+    animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.05);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+
+<div class="page" id="page1">
+
+    <h1>BISHESH BYANJANKAR</h1>
+
+    <p>
+        Warning ⚠️<br>
+        You are entering the Bro Zone.
+    </p>
+
+    <button onclick="nextPage(1,2)">
+        ENTER
+    </button>
+
+</div>
+
+<!-- PAGE 2 -->
+
+<div class="page hidden" id="page2">
+
+    <h1>LEVEL 1 BRO</h1>
+
+    <p>
+        Bro is so cool even mosquitoes hesitate before biting him.
+    </p>
+
+    <div class="card">
+        😎 + 🚀 + 🔥 = Bishesh
+    </div>
+
+    <button onclick="nextPage(2,3)">
+        Continue
+    </button>
+
+</div>
+
+<!-- PAGE 3 -->
+
+<div class="page hidden" id="page3">
+
+    <h1>BRO ENERGY DETECTED</h1>
+
+    <p>
+        System scan complete...<br><br>
+
+        ✔ Funny<br>
+        ✔ Legendary<br>
+        ✔ Not boring<br>
+        ✔ Certified Homie
+    </p>
+
+    <button onclick="nextPage(3,4)">
+        Final Level
+    </button>
+
+</div>
+
+<!-- PAGE 4 -->
+
+<div class="page hidden" id="page4">
+
+    <h1>ULTIMATE MESSAGE</h1>
+
+    <p>
+        Bro, stay happy.<br>
+        Life becomes better with friends like you 🔥
+    </p>
+
+    <div class="card">
+        YOU UNLOCKED:<br><br>
+        "BEST BRO AWARD 🏆"
+    </div>
+
+    <button onclick="location.reload()">
+        Replay
+    </button>
+
+</div>
+
+<script>
+
+/* page switch */
+
+function nextPage(current,next){
+
+    document.getElementById("page"+current)
+    .classList.add("hidden");
+
+    document.getElementById("page"+next)
+    .classList.remove("hidden");
+}
+
+/* floating particles */
+
+for(let i=0;i<40;i++){
+
+    let circle=document.createElement("div");
+
+    circle.classList.add("circle");
+
+    let size=Math.random()*60;
+
+    circle.style.width=size+"px";
+    circle.style.height=size+"px";
+
+    circle.style.left=Math.random()*100+"vw";
+
+    circle.style.animationDuration=
+    (Math.random()*6+4)+"s";
+
+    document.body.appendChild(circle);
+}
+
+</script>
+
+</body>
+</html>

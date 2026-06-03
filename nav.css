@@ -1,0 +1,23 @@
+.nav {
+    background-color: lightgray;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li{
+    display: inline-block;
+    font-size: 15px;
+    padding: 20px;
+}
+
+img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    opacity: 0.5;
+  
+}
+img:hover{
+    opacity: 1;
+}

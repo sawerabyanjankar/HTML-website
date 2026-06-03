@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(247, 167, 77);
+
+}
+p{
+    background-color: bisque;
+}
+
+h1{
+    background-color: rgb(247, 66, 66);
+}
+h2{
+    background-color: rgb(245, 64, 32);
+    font-family: 'Times New Roman', Times, serif;
+}
+.a{text-shadow: ;
+    background-color: rgb(253, 45, 45);
+    text-align: justify;unicode-bidi: bidi-override;
+    vertical-align:text-top;
+    color: aquamarine;
+    
+
+}
+.b
+{
+    text-decoration-style: wavy;
+    text-decoration-thickness: 1px;
+    text-indent: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.c
+{ text-align: justify;
+    text-shadow: 50cap;
+    font-style: italic;
+    font-weight:lighter;
+    font-variant: small-caps;
+    font-size: 20px;
+}
+#home:link{
+    color: blue;
+    background-color: rgb(255, 0, 13);
+ 
+ 
+}
+#home:visited{
+    color: rgb(238, 241, 30);
+    text-decoration: none;
+    background-color: rgb(245, 11, 11);
+ 
+}
+#home:hover,:active{
+    color: purple;
+     text-decoration: underline;
+     background-color: rgb(75, 250, 183);
+    
+     padding: 2px;
+     text-align: center;
+     display: inline-block;
+     
+ 
+}
+#home:active{
+    color:rgb(252, 8, 0);
+
+ 
+}

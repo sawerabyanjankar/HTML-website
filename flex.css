@@ -1,0 +1,22 @@
+.center {
+    display: flex;
+    justify-content: center;
+    border: 3px solid green;
+    align-items: center;
+    height: auto;
+}
+div.transbox p {
+margin: 5%;
+font-weight: bold;
+color: coral;
+}
+
+div.transbox {
+    margin: 5%;
+    background-color: aquamarine;
+    border: 1px solid red;
+}
+div.background {
+    background:url(e)repeat ;
+    border: 1px solid black;
+}

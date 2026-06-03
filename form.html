@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="has.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <article class="featured">Featured content</article>
+        <p>Regular content</p>
+    </section>
+
+     <section>
+        
+        <article>Something  content</article>
+    </section>
+    <form>
+        <h1>Welcome to Web Development</h1>
+
+        <label for="search">Search for your interested courses:</label>
+        <input type="search" name="search" id="search"><br><br>
+
+        <fieldset>
+            <legend>Enter you name</legend>
+
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname"  name="fname" size="50" maxlength="5"><br><br>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <label for="email">Enter you email</label>
+        <input type="email" name="email" id="email" placeholder="abc@gmail.com" size="50" autocomplete="on"><br><br>
+
+          <label for="pw" > Password:</label>
+          <input type="password" name="Password" id="pw"><br><br>
+
+          <label for="phone">Enter you number:</label>
+          <input type="tel" name="phone" id="phone"required pattern="[0-9]{10}"><br><br>
+
+          <label for="DOB"> Date Of Birth</label>
+          <input type="datetime-local" id="DOB" name="DOB">
+
+        </fieldset>
+<h2>Choose your favourite language</h2>
+<fieldset>
+        <input type="radio" id="html" name="lang">
+        <label for="html">HTML</label>
+
+        <input type="radio" id="js" name="lang">
+        <label for="js">JavaScript</label>
+
+        <input type="radio" id="CSS" name="lang">
+        <label for="CSS">CSS</label>
+</fieldset><br>
+        <fieldset>
+            <legend>Your favourite browser to run:</legend>
+            <input list="Browser">
+            <datalist id="Browser">
+            <option value="Chrome">
+            <option value="Brave">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Opera"></option>
+                             </option>
+                         </option>
+                     </option>
+
+                </option>
+            </datalist>
+        </fieldset>
+
+        <h2>Favourite Code Editor</h2>
+        <fieldset>
+        <input type="checkbox" id="vsc" name="vsc1">
+        <label for="vsc">Visual Studio Code</label>
+
+        <input type="checkbox" id="ws" name="ws2">
+        <label for="ws">WindSurf</label>
+
+        <input type="checkbox" id="csr" name="csr3">
+        <label for="csr">Cursor</label>
+    
+        <input type="checkbox" id="ag" name="ag4">
+        <label for="ag">AntiGravity</label><br><br>
+    </fieldset>
+
+        <label for="Courses">Choose your course:</label>
+
+        <select name="Courses" id="Courses" multiple>
+            <option value="Frontend">Frontend</option>
+            <option value="Backend">Backend</option>
+            <option value="Ai">Ai</option>
+            <option value="CS">Cyber Security</option>
+            <option value="Dm">Digital Marketing</option>
+        </select><br><br>
+
+        <label for="noofcourse">Number of Courses:</label>
+        <input type="number" id="no" name="no" min="1" max="3"><br><br>
+
+        <label for="vol">Number of Courses:</label>
+        <input type="range" name="vol" id="vol"><br><br>
+
+        <label for="time">Choose your time:</label>
+        <input type="time" name="time" id="time"><br><br>
+
+        <label for="homepage" >Add your Linkedin account:</label>
+        <input type="url" name="linkedin" id="linkedin"><br><br>
+                <textarea name="msg" id="msg" rows="5" cols="50">
+            Anything to ask?
+        </textarea><br><br>
+
+        <fieldset>
+            <label for="Favcolour">Select your favourite colour:</label>
+            <input type="colour" id="favcolour" name="favcolour">
+        </fieldset><br>
+
+    
+            <label for="myfile">Select a file:</label>
+            <input type="file" name="myfile" id="myfile"multiple>
+        </fieldset><br>
+
+        </fieldset>
+
+      <button type="submit" onclick="alert('Thank you ')">Submit</button>
+       <input type="reset" value="Reset"><br> <br>
+      <input type="image" src="download.jpg" alt="download" width="150">
+
+     
+
+    
+
+    </form>
+</body>
+</html>

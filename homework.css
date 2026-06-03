@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #5f5e5ee8;
+  display: flex;
+}
+
+
+ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #444242;
+}
+
+div {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gallery-item1 {
+  background-color: rgb(119, 120, 121);
+}
+
+.acoustic {
+   color: black;
+ background-color:rgb(85, 97, 114);
+}
+
+.gallery-item2 {
+     background-color: rgb(119, 120, 121);}
+
+.bass {
+   color: black;
+ background-color:rgb(85, 97, 114);
+}
+
+
+
+.gallery-item3 {
+    background-color: rgb(119, 120, 121);
+}
+
+.classical {
+   color: black;
+ background-color:rgb(85, 97, 114);
+}
+
+.gallery-item4 {
+     background-color: rgb(119, 120, 121);
+}
+
+.electric {
+   color: black;
+   background-color:rgb(85, 97, 114);
+}
+
+.gallery-item5 {
+    background-color: rgb(119, 120, 121);
+}
+
+.headless {
+   color: black;
+   background-color:rgb(85, 97, 114);
+}
+
+footer{
+    background-color:rgb(12, 12, 12);
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+footer h3{
+    margin-bottom:10px;
+}
+
+
+
+.fixed-box{
+    position: fixed;
+    background: rgb(10, 252, 103);
+    height: 30px;
+    bottom: 50px;
+    right: 20px;
+    padding: 20px;
+    margin: 15px;
+    width:50px;
+    text-align: center;
+    border-radius:10px;
+   
+}
